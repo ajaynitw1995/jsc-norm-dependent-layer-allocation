@@ -1,0 +1,38 @@
+{
+  "pareto_theta_ratio10": 0.7617635270541082,
+  "pareto_worst_regret_ratio10": 1.0285259588753741,
+  "sqrt_theta_ratio10": 0.7597469266479577,
+  "two_thirds_theta_ratio10": 0.8227449696365736,
+  "full_bvp_max_strict_wins": 42,
+  "full_bvp_max_ties": 6,
+  "full_bvp_max_reversals": 0,
+  "full_bvp_bal_strict_wins": 42,
+  "full_bvp_bal_ties": 6,
+  "full_bvp_bal_reversals": 0,
+  "frozen_bal_exact_match_pct": 95.375,
+  "frozen_bal_within_one_pct": 100.0,
+  "frozen_bal_mean_regret_pct": 0.00048502193392785387,
+  "frozen_bal_max_regret_pct": 0.05460818959428515,
+  "exhaustive_max_within1_pct": 100.0,
+  "exhaustive_bal_within1_pct": 100.0,
+  "pilot_N64_equal_error": 0.010986320817778061,
+  "pilot_N64_sqrt_error": 0.006979190338142205,
+  "resolution_sensitivity_no_reversal": true,
+  "bakhvalov_balanced_theory_constant_N1024": 0.5767861755340927,
+  "bakhvalov_balanced_coeff_range_N1024": [
+    0.5767872502294122,
+    0.5767925218191804
+  ],
+  "bakhvalov_max_coeff_range_N1024": [
+    0.3517601438568459,
+    0.40381634829558755
+  ],
+  "bakhvalov_max_strict_wins": 42,
+  "bakhvalov_max_ties": 6,
+  "bakhvalov_max_reversals": 0,
+  "bakhvalov_bal_strict_wins": 42,
+  "bakhvalov_bal_ties": 6,
+  "bakhvalov_bal_reversals": 0,
+  "bakhvalov_bal_exact_all_N256": true,
+  "bakhvalov_max_max_regret_N256_pct": 12.468773123929399
+}
