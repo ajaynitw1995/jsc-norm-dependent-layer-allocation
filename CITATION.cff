@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "Reproducibility files for norm-dependent finite-budget layer allocation"
+message: "If you use these reproducibility files, please cite the associated manuscript."
+type: software
+authors:
+  - family-names: Rathore
+    given-names: Ajay Singh
+repository-code: "https://github.com/ajaynitw1995/jsc-norm-dependent-layer-allocation"
