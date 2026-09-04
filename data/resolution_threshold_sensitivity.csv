@@ -1,0 +1,5 @@
+zeta,sqrt_strict,bal_strict,max_ties,bal_ties,max_reversals,bal_reversals
+0.5,36,36,12,12,0,0
+0.7,42,42,6,6,0,0
+0.9,42,42,6,6,0,0
+1.0,42,42,6,6,0,0
