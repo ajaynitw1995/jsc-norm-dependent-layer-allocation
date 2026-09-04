@@ -1,0 +1,23 @@
+name: Reproducibility check
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Run reproducibility driver
+        run: python reproduce_jsc_stype.py --out output
+      - name: Show summary
+        run: cat output/summary.json
