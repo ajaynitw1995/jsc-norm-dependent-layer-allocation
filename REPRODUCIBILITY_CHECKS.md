@@ -1,6 +1,6 @@
 # Reproducibility audit
 
-The repository was rerun from a clean output directory on 4 September 2026. The script completed without errors and regenerated every committed CSV file exactly (within floating-point identity in the audit environment).
+The reproducibility workflow was rerun from a clean output directory on 4 September 2026. The supplied driver regenerated the source numerical sweeps and the numerical results underlying the manuscript tables, figures, and compact validation files without errors.
 
 ## Environment used for the final audit
 
@@ -9,7 +9,7 @@ The repository was rerun from a clean output directory on 4 September 2026. The 
 - pandas 2.2.3
 - Matplotlib 3.10.8
 
-The declared requirements remain intentionally broader (`numpy>=1.24`, `pandas>=2.0`, `matplotlib>=3.7`) because the script uses only long-stable public APIs.
+The declared requirements remain intentionally broader (`numpy>=1.24`, `pandas>=2.0`, `matplotlib>=3.7`) because the code uses long-stable public APIs.
 
 ## Numerical checks
 
@@ -20,6 +20,10 @@ The declared requirements remain intentionally broader (`numpy>=1.24`, `pandas>=
 - Bakhvalov-S balanced coefficient at `N=1024`: theory `0.5767861755`; computed coefficient range `0.5767872502`--`0.5767925218`.
 - Bakhvalov-S selected `N=256` balanced exhaustive optima: the 2/3-power prediction is exact in every listed case.
 - Parameter-uniform pilot at `N=64`: equal split `1.0986320818e-02`; square-root split `6.9791903381e-03`.
+
+## Data files
+
+The files under `data/` provide direct reviewer-readable support for the manuscript tables and principal validation summaries. Some are compact projections of larger deterministic sweeps. Running `reproduce_jsc_stype.py` regenerates the complete source sweeps in `output/data/`, together with the figure files in `output/figures/`.
 
 ## Independent consistency checks
 
